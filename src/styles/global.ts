@@ -1,7 +1,7 @@
 import { createGlobalStyle } from 'styled-components';
 
 const GlobalStyles = createGlobalStyle`
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;600&family=Open+Sans:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;600;700&family=Open+Sans:wght@400;600;700&display=swap');
 
   body {
     -webkit-font-smoothing: antialiased !important;
@@ -40,7 +40,7 @@ const GlobalStyles = createGlobalStyle`
 
   h1,h2,h3,h4,h5,strong{
     font-family: 'Josefin Sans', sans-serif;
-    font-weight: 600;
+    font-weight: 700;
   }
 
   body, html, #root{
@@ -56,7 +56,7 @@ const GlobalStyles = createGlobalStyle`
 
   --color-text-base: #574F1E;
   --color-text-secundary: #E7E2DD;
-  --color-button-background: #574F1E;
+  --color-button-background: #E9B626;
   --color-button-text: #EAEAEA;
   --color-error: #c53030;
   --color-text-placeholder: #a8a8b3;
