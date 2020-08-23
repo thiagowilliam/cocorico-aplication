@@ -34,27 +34,27 @@ export const Content = styled.div`
       color: ${shade(0.2, '#574F1E')};
     }
   }
-`;
 
-export const Form = styled.form`
-  margin: 8rem 0;
-  width: 340px;
-  text-align: center;
+  form {
+    margin: 8rem 0;
+    width: 340px;
+    text-align: center;
 
-  h1 {
-    margin-bottom: 2.4rem;
-    color: var(--color-text-base);
-  }
+    h1 {
+      margin-bottom: 2.4rem;
+      color: var(--color-text-base);
+    }
 
-  a {
-    color: var(--color-text-base);
-    display: block;
-    text-decoration: none;
-    margin-top: 2.4rem;
-    transition: all 0.2s;
+    a {
+      color: var(--color-text-base);
+      display: block;
+      text-decoration: none;
+      margin-top: 2.4rem;
+      transition: all 0.2s;
 
-    &:hover {
-      color: ${shade(0.2, '#574F1E')};
+      &:hover {
+        color: ${shade(0.2, '#574F1E')};
+      }
     }
   }
 `;

@@ -6,7 +6,7 @@ type ButtonProps = ButtonHTMLAttributes<HTMLButtonElement>;
 
 const Button: React.FC<ButtonProps> = ({ children, ...props }) => {
   return (
-    <S.Container type="button" {...props}>
+    <S.Container type="submit" {...props}>
       {children}
     </S.Container>
   );
