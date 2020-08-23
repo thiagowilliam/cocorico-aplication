@@ -1,9 +1,15 @@
-import React from 'react';
+import React, { ButtonHTMLAttributes } from 'react';
 
 import * as S from './styles';
 
-const Button: React.FC = () => {
-  return <S.Container type="submit">Entrar</S.Container>;
+type ButtonProps = ButtonHTMLAttributes<HTMLButtonElement>;
+
+const Button: React.FC<ButtonProps> = ({ children, ...props }) => {
+  return (
+    <S.Container type="button" {...props}>
+      {children}
+    </S.Container>
+  );
 };
 
 export default Button;

@@ -1,4 +1,5 @@
 import React from 'react';
+import { FiMail, FiLock } from 'react-icons/fi';
 import LogoImg from '../assets/img/logo-cocorico.svg';
 import * as S from './styles';
 import Button from '../components/Button';
@@ -16,10 +17,15 @@ const SignIn: React.FC = () => {
 
         <S.Form>
           <h1>Faça seu logon</h1>
-          <Input type="email" placeholder="E-mail" />
-          <Input type="password" placeholder="Senha" />
+          <Input name="email" icon={FiMail} type="email" placeholder="E-mail" />
+          <Input
+            name="password"
+            icon={FiLock}
+            type="password"
+            placeholder="Senha"
+          />
 
-          <Button />
+          <Button> Entrar</Button>
 
           <a href="/" title="Esqueci minha senha">
             Esqueci minha senha
