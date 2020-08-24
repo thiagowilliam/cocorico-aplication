@@ -3,6 +3,7 @@ import { FiLogIn } from 'react-icons/fi';
 import { shade } from 'polished';
 
 import signInBackgroundImg from '../assets/img/sign-in-background.png';
+import iconeCocorico from '../assets/img/icone-cocorico.svg';
 
 export const Container = styled.section`
   height: 100vh;
@@ -11,6 +12,7 @@ export const Container = styled.section`
 `;
 
 export const Content = styled.div`
+  background: url(${iconeCocorico}) no-repeat -25% 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -34,27 +36,27 @@ export const Content = styled.div`
       color: ${shade(0.2, '#E9B626')};
     }
   }
-`;
 
-export const Form = styled.form`
-  margin: 8rem 0;
-  width: 340px;
-  text-align: center;
+  form {
+    margin: 8rem 0;
+    width: 340px;
+    text-align: center;
 
-  h1 {
-    margin-bottom: 2.4rem;
-    color: var(--color-text-base);
-  }
+    h1 {
+      margin-bottom: 2.4rem;
+      color: var(--color-text-base);
+    }
 
-  a {
-    color: var(--color-text-base);
-    display: block;
-    text-decoration: none;
-    margin-top: 2.4rem;
-    transition: all 0.2s;
+    a {
+      color: var(--color-text-base);
+      display: block;
+      text-decoration: none;
+      margin-top: 2.4rem;
+      transition: all 0.2s;
 
-    &:hover {
-      color: ${shade(0.2, '#574F1E')};
+      &:hover {
+        color: ${shade(0.2, '#574F1E')};
+      }
     }
   }
 `;

@@ -3,6 +3,7 @@ import { FiArrowLeft } from 'react-icons/fi';
 import { shade } from 'polished';
 
 import signUpBackgroundImg from '../assets/img/sign-up-background.png';
+import iconeCocorico from '../assets/img/icone-cocorico.svg';
 
 export const Container = styled.section`
   height: 100vh;
@@ -11,6 +12,7 @@ export const Container = styled.section`
 `;
 
 export const Content = styled.div`
+  background: url(${iconeCocorico}) no-repeat -25% 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
